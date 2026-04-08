@@ -32,7 +32,10 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: example-unframer-app/dist
+          path: |
+            example-unframer-app/dist
+            example-unframer-app/package.json
+            example-unframer-app/server.cjs
 
   deploy:
     runs-on: ubuntu-latest
