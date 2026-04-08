@@ -29,6 +29,7 @@ const PROJECTS_DATA: Record<string, any> = {
       "https://framerusercontent.com/images/Py7CJ9J9JWIYKogqcdM9hr6319w.gif"
     ]
   },
+  
   "lab": {
     title: "Cyber Security Homelab",
     slug: "lab",
