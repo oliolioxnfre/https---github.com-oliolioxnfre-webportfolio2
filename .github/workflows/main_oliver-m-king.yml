@@ -26,7 +26,7 @@ jobs:
       - name: Zip deployment package
         working-directory: example-unframer-app
         # We zip the exact files needed so Azure doesn't get confused by nested subdirectories
-        run: zip -qr release.zip dist node_modules package.json server.cjs process.json
+        run: zip -qr release.zip dist node_modules package.json server.js
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
