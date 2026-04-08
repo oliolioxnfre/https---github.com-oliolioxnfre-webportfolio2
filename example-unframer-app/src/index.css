@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: rgb(20, 20, 23);
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Ensure bullets and list markers are visible and match the white text */
+  ul, ol {
+    list-style-position: outside; /* Standard Framer/Modern style */
+    padding-left: 1.5rem;
+  }
+  
+  li::marker {
+    color: white !important;
+  }
+
+  li {
+    color: white !important;
+  }
+  
+  /* Handle Framer-inserted HTML content */
+  [data-preset-tag="p"] {
+    color: white !important;
+  }
+}
