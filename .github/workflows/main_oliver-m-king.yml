@@ -26,7 +26,9 @@ jobs:
         with:
           node-version: '24'
           cache: 'npm'
+          cache-dependency-path: example-unframer-app/package-lock.json
       - name: Install dependencies
+        working-directory: example-unframer-app
         run: npm install
       - name: Build And Deploy
         id: builddeploy
