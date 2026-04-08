@@ -8,8 +8,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "framer": "unframer 1280626051fdb272 --outDir src/framer"
+    "framer": "unframer 1280626051fdb272 --outDir src/framer",
+    "build": "npm run framer && vite build"
   },
   "dependencies": {
     "@motionone/dom": "^10.18.0",
