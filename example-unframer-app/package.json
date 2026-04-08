@@ -10,7 +10,7 @@
     "dev": "vite",
     "framer": "unframer 1280626051fdb272 --outDir src/framer",
     "build": "npm run framer && vite build",
-    "start": "node server.cjs"
+    "start": "node server.js"
   },
   "dependencies": {
     "@motionone/dom": "^10.18.0",
