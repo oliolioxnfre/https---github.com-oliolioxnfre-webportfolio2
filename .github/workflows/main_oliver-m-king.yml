@@ -29,9 +29,9 @@ jobs:
           npm run build
           
       - name: Zip deployment package
-        working-directory: example-unframer-app/dist
-        # Critical change: We zip the *contents* of dist as the root of the application
-        run: zip -qr ../release.zip .
+        working-directory: example-unframer-app
+        # We zip the exact files needed so Azure properly executes the Node.js server fallback
+        run: zip -qr release.zip dist node_modules package.json server.js
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
