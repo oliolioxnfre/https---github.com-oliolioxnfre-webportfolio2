@@ -68,7 +68,7 @@ import { routes } from "./chunks/chunk-4RKJF2MS.js";
 import { Fragment as Fragment2 } from "react";
 import { ContextProviders } from "unframer";
 
-// /:https://framerusercontent.com/modules/qebFcVvbbOKFMHXMtIgi/hWNeCE7lrbk7JQj6QMfS/Kgzg6ADD5.js
+// /:https://framerusercontent.com/modules/qebFcVvbbOKFMHXMtIgi/KZiFU3OaAIRIoF7lBSQL/Kgzg6ADD5.js
 import { jsx as _jsx2, jsxs as _jsxs2 } from "react/jsx-runtime";
 import {
 	addFonts,
@@ -1972,13 +1972,13 @@ var css7 = [
 ];
 var className7 = "framer-JETSW";
 
-// /:https://framerusercontent.com/modules/qebFcVvbbOKFMHXMtIgi/hWNeCE7lrbk7JQj6QMfS/Kgzg6ADD5.js
+// /:https://framerusercontent.com/modules/qebFcVvbbOKFMHXMtIgi/KZiFU3OaAIRIoF7lBSQL/Kgzg6ADD5.js
 var SlideshowFonts = getFonts(stdin_default2);
 var SmartComponentScopedContainerWithFXWithOptimizedAppearEffect =
 	withOptimizedAppearEffect(withFX(SmartComponentScopedContainer));
 var ButtonFonts = getFonts(stdin_default);
 var cycleOrder = ["ZlRmpUnE6", "s7g0x4DNr", "vrp8YXOAZ"];
-var serializationHash = "framer-DgmL2";
+var serializationHash = "framer-t3ZKe";
 var variantClassNames = {
 	s7g0x4DNr: "framer-v-y1ogye",
 	vrp8YXOAZ: "framer-v-5qtz75",
@@ -2560,7 +2560,7 @@ var Component2 = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																alt: "",
 																fit: "fill",
 																sizes: "400px",
-																...toResponsiveImage(rcpXaqRkc2),
+																...toResponsiveImage(nTnXOxX5W2),
 															}}
 															className={"framer-1ntolda"}
 															data-framer-name={"Image2"}
@@ -2574,7 +2574,7 @@ var Component2 = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																alt: "",
 																fit: "fill",
 																sizes: "400px",
-																...toResponsiveImage(rcpXaqRkc2),
+																...toResponsiveImage(LYQB6Hwa12),
 															}}
 															className={"framer-i0kv74"}
 															data-framer-name={"Image3"}
@@ -2588,7 +2588,7 @@ var Component2 = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																alt: "",
 																fit: "fill",
 																sizes: "400px",
-																...toResponsiveImage(rcpXaqRkc2),
+																...toResponsiveImage(g1q6inlIz2),
 															}}
 															className={"framer-1nnpacx"}
 															data-framer-name={"Image4"}
@@ -2602,7 +2602,7 @@ var Component2 = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																alt: "",
 																fit: "fill",
 																sizes: "400px",
-																...toResponsiveImage(rcpXaqRkc2),
+																...toResponsiveImage(WQCsfAi1S2),
 															}}
 															className={"framer-r5r0la"}
 															data-framer-name={"Image5"}
@@ -2616,7 +2616,7 @@ var Component2 = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 																alt: "",
 																fit: "fill",
 																sizes: "400px",
-																...toResponsiveImage(rcpXaqRkc2),
+																...toResponsiveImage(hrwRgXYnB2),
 															}}
 															className={"framer-g6seq6"}
 															data-framer-name={"Image6"}
@@ -2934,7 +2934,7 @@ var Component2 = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 													"--framer-text-alignment": "left",
 												}}
 											>
-												
+												{"More Projects"}
 											</motion2.h2>
 										</React.Fragment>
 									</RichText>
@@ -3562,38 +3562,38 @@ var Component2 = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 });
 var css8 = [
 	"@supports (aspect-ratio: 1) { body { --framer-aspect-ratio-supported: auto; } }",
-	".framer-DgmL2.framer-gam82o, .framer-DgmL2 .framer-gam82o { display: block; }",
-	".framer-DgmL2.framer-dftqrj { align-content: center; align-items: center; display: flex; flex-direction: column; flex-wrap: nowrap; gap: 0px; height: min-content; justify-content: center; overflow: hidden; padding: 0px; position: relative; width: 1200px; }",
-	".framer-DgmL2 .framer-cy2yyp { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 0px; height: min-content; justify-content: center; overflow: hidden; padding: 0px; position: relative; width: 100%; }",
-	".framer-DgmL2 .framer-1v4zdte { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 0px; height: min-content; justify-content: flex-start; padding: 120px 16px 32px 16px; position: relative; width: 100%; }",
-	".framer-DgmL2 .framer-1fcmjse { align-content: flex-start; align-items: flex-start; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 32px; height: min-content; justify-content: center; max-width: 712px; overflow: visible; padding: 0px; position: relative; width: 100%; }",
-	".framer-DgmL2 .framer-10cuylw { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 32px; height: min-content; justify-content: center; overflow: hidden; padding: 0px; position: relative; width: 100%; }",
-	".framer-DgmL2 .framer-1qznuy6 { align-content: flex-start; align-items: flex-start; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 8px; height: min-content; justify-content: center; overflow: visible; padding: 0px; position: relative; width: 100%; }",
-	".framer-DgmL2 .framer-1qabx6z, .framer-DgmL2 .framer-fsdt11, .framer-DgmL2 .framer-1h2hhvr, .framer-DgmL2 .framer-jf3n4d, .framer-DgmL2 .framer-1ryfb6v, .framer-DgmL2 .framer-oflyzo, .framer-DgmL2 .framer-ef1zqv, .framer-DgmL2 .framer-1bmhxyy { flex: none; height: auto; position: relative; white-space: pre-wrap; width: 100%; word-break: break-word; word-wrap: break-word; }",
-	".framer-DgmL2 .framer-4yciti { align-content: flex-start; align-items: flex-start; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 8px; height: min-content; justify-content: center; list-style: none; margin: 0px; overflow: hidden; padding: 0px 0px 16px 0px; position: relative; width: 100%; }",
-	".framer-DgmL2 .framer-nb1ee6, .framer-DgmL2 .framer-1y8y4fu, .framer-DgmL2 .framer-6vhd5a { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; height: min-content; justify-content: space-between; overflow: hidden; padding: 0px; position: relative; width: 100%; }",
-	".framer-DgmL2 .framer-1u68gix, .framer-DgmL2 .framer-sykjgy, .framer-DgmL2 .framer-1k1txaq, .framer-DgmL2 .framer-11plhb6, .framer-DgmL2 .framer-13ow4j4, .framer-DgmL2 .framer-yt0712 { flex: none; height: auto; position: relative; white-space: pre; width: auto; }",
-	".framer-DgmL2 .framer-tbedrl, .framer-DgmL2 .framer-gs274b { flex: none; height: auto; max-width: 600px; position: relative; white-space: pre-wrap; width: auto; word-break: break-word; word-wrap: break-word; }",
-	".framer-DgmL2 .framer-utnsmw-container { flex: none; height: 400px; position: relative; width: 711px; }",
-	".framer-DgmL2 .framer-umyszj, .framer-DgmL2 .framer-1ntolda, .framer-DgmL2 .framer-i0kv74, .framer-DgmL2 .framer-1nnpacx, .framer-DgmL2 .framer-r5r0la, .framer-DgmL2 .framer-g6seq6 { height: 300px; position: relative; width: 400px; }",
-	".framer-DgmL2 .framer-1jz1iqe { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 16px; height: min-content; justify-content: center; overflow: hidden; padding: 16px; position: relative; width: 100%; }",
-	".framer-DgmL2 .framer-v7eeyj { align-content: flex-start; align-items: flex-start; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 24px; height: min-content; justify-content: center; max-width: 712px; overflow: hidden; padding: 0px; position: relative; width: 100%; }",
-	".framer-DgmL2 .framer-8h7w3y { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 24px; height: min-content; justify-content: center; overflow: hidden; padding: 0px; position: relative; width: 100%; }",
-	".framer-DgmL2 .framer-1u3f9h6, .framer-DgmL2 .framer-m3un14, .framer-DgmL2 .framer-pqw8bt, .framer-DgmL2 .framer-14xtagu { align-content: flex-start; align-items: flex-start; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 8px; height: min-content; justify-content: center; overflow: hidden; padding: 0px; position: relative; width: 100%; }",
-	".framer-DgmL2 .framer-1s34as7 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 8px; height: min-content; justify-content: center; overflow: hidden; padding: 60px 16px 60px 16px; position: relative; width: 100%; }",
-	".framer-DgmL2 .framer-165bc73 { align-content: flex-start; align-items: flex-start; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 32px; height: min-content; justify-content: center; max-width: 712px; overflow: hidden; padding: 0px; position: relative; width: 100%; }",
-	".framer-DgmL2 .framer-131s2aj { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: 1px; justify-content: center; overflow: var(--overflow-clip-fallback, clip); padding: 0px; position: relative; width: 1px; }",
-	".framer-DgmL2 .framer-15ijds9, .framer-DgmL2 .framer-9h2fw0, .framer-DgmL2 .framer-gj7okz, .framer-DgmL2 .framer-fyideh, .framer-DgmL2 .framer-1gtl1zj, .framer-DgmL2 .framer-udrtll { flex: none; height: 600px; position: relative; width: 600px; }",
-	".framer-DgmL2 .framer-4iqrgt-container, .framer-DgmL2 .framer-1htuiri-container { flex: none; height: auto; position: relative; width: auto; }",
-	".framer-DgmL2 .framer-h01cvc { flex: 1 0 0px; height: 1px; overflow: hidden; position: relative; width: 1px; }",
-	".framer-DgmL2.framer-v-y1ogye.framer-dftqrj { width: 810px; }",
-	".framer-DgmL2.framer-v-y1ogye .framer-11plhb6 { order: 0; }",
-	".framer-DgmL2.framer-v-y1ogye .framer-1ryfb6v { order: 1; }",
-	".framer-DgmL2.framer-v-5qtz75.framer-dftqrj { width: 390px; }",
-	".framer-DgmL2.framer-v-5qtz75 .framer-1v4zdte { padding: 120px 16px 19px 16px; }",
-	".framer-DgmL2.framer-v-5qtz75 .framer-1fcmjse { height: 438px; }",
-	".framer-DgmL2.framer-v-5qtz75 .framer-10cuylw, .framer-DgmL2.framer-v-5qtz75 .framer-1qznuy6 { gap: 24px; }",
-	".framer-DgmL2.framer-v-5qtz75 .framer-utnsmw-container { height: 45%; width: 358px; }",
+	".framer-t3ZKe.framer-gam82o, .framer-t3ZKe .framer-gam82o { display: block; }",
+	".framer-t3ZKe.framer-dftqrj { align-content: center; align-items: center; display: flex; flex-direction: column; flex-wrap: nowrap; gap: 0px; height: min-content; justify-content: center; overflow: hidden; padding: 0px; position: relative; width: 1200px; }",
+	".framer-t3ZKe .framer-cy2yyp { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 0px; height: min-content; justify-content: center; overflow: hidden; padding: 0px; position: relative; width: 100%; }",
+	".framer-t3ZKe .framer-1v4zdte { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 0px; height: min-content; justify-content: flex-start; padding: 120px 16px 32px 16px; position: relative; width: 100%; }",
+	".framer-t3ZKe .framer-1fcmjse { align-content: flex-start; align-items: flex-start; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 32px; height: min-content; justify-content: center; max-width: 712px; overflow: visible; padding: 0px; position: relative; width: 100%; }",
+	".framer-t3ZKe .framer-10cuylw { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 32px; height: min-content; justify-content: center; overflow: hidden; padding: 0px; position: relative; width: 100%; }",
+	".framer-t3ZKe .framer-1qznuy6 { align-content: flex-start; align-items: flex-start; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 8px; height: min-content; justify-content: center; overflow: visible; padding: 0px; position: relative; width: 100%; }",
+	".framer-t3ZKe .framer-1qabx6z, .framer-t3ZKe .framer-fsdt11, .framer-t3ZKe .framer-1h2hhvr, .framer-t3ZKe .framer-jf3n4d, .framer-t3ZKe .framer-1ryfb6v, .framer-t3ZKe .framer-oflyzo, .framer-t3ZKe .framer-ef1zqv, .framer-t3ZKe .framer-1bmhxyy { flex: none; height: auto; position: relative; white-space: pre-wrap; width: 100%; word-break: break-word; word-wrap: break-word; }",
+	".framer-t3ZKe .framer-4yciti { align-content: flex-start; align-items: flex-start; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 8px; height: min-content; justify-content: center; list-style: none; margin: 0px; overflow: hidden; padding: 0px 0px 16px 0px; position: relative; width: 100%; }",
+	".framer-t3ZKe .framer-nb1ee6, .framer-t3ZKe .framer-1y8y4fu, .framer-t3ZKe .framer-6vhd5a { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; height: min-content; justify-content: space-between; overflow: hidden; padding: 0px; position: relative; width: 100%; }",
+	".framer-t3ZKe .framer-1u68gix, .framer-t3ZKe .framer-sykjgy, .framer-t3ZKe .framer-1k1txaq, .framer-t3ZKe .framer-11plhb6, .framer-t3ZKe .framer-13ow4j4, .framer-t3ZKe .framer-yt0712 { flex: none; height: auto; position: relative; white-space: pre; width: auto; }",
+	".framer-t3ZKe .framer-tbedrl, .framer-t3ZKe .framer-gs274b { flex: none; height: auto; max-width: 600px; position: relative; white-space: pre-wrap; width: auto; word-break: break-word; word-wrap: break-word; }",
+	".framer-t3ZKe .framer-utnsmw-container { flex: none; height: 400px; position: relative; width: 711px; }",
+	".framer-t3ZKe .framer-umyszj, .framer-t3ZKe .framer-1ntolda, .framer-t3ZKe .framer-i0kv74, .framer-t3ZKe .framer-1nnpacx, .framer-t3ZKe .framer-r5r0la, .framer-t3ZKe .framer-g6seq6 { height: 300px; position: relative; width: 400px; }",
+	".framer-t3ZKe .framer-1jz1iqe { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 16px; height: min-content; justify-content: center; overflow: hidden; padding: 16px; position: relative; width: 100%; }",
+	".framer-t3ZKe .framer-v7eeyj { align-content: flex-start; align-items: flex-start; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 24px; height: min-content; justify-content: center; max-width: 712px; overflow: hidden; padding: 0px; position: relative; width: 100%; }",
+	".framer-t3ZKe .framer-8h7w3y { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 24px; height: min-content; justify-content: center; overflow: hidden; padding: 0px; position: relative; width: 100%; }",
+	".framer-t3ZKe .framer-1u3f9h6, .framer-t3ZKe .framer-m3un14, .framer-t3ZKe .framer-pqw8bt, .framer-t3ZKe .framer-14xtagu { align-content: flex-start; align-items: flex-start; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 8px; height: min-content; justify-content: center; overflow: hidden; padding: 0px; position: relative; width: 100%; }",
+	".framer-t3ZKe .framer-1s34as7 { align-content: center; align-items: center; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 8px; height: min-content; justify-content: center; overflow: hidden; padding: 60px 16px 60px 16px; position: relative; width: 100%; }",
+	".framer-t3ZKe .framer-165bc73 { align-content: flex-start; align-items: flex-start; display: flex; flex: none; flex-direction: column; flex-wrap: nowrap; gap: 32px; height: min-content; justify-content: center; max-width: 712px; overflow: hidden; padding: 0px; position: relative; width: 100%; }",
+	".framer-t3ZKe .framer-131s2aj { align-content: center; align-items: center; display: flex; flex: none; flex-direction: row; flex-wrap: nowrap; gap: 10px; height: 1px; justify-content: center; overflow: var(--overflow-clip-fallback, clip); padding: 0px; position: relative; width: 1px; }",
+	".framer-t3ZKe .framer-15ijds9, .framer-t3ZKe .framer-9h2fw0, .framer-t3ZKe .framer-gj7okz, .framer-t3ZKe .framer-fyideh, .framer-t3ZKe .framer-1gtl1zj, .framer-t3ZKe .framer-udrtll { flex: none; height: 600px; position: relative; width: 600px; }",
+	".framer-t3ZKe .framer-4iqrgt-container, .framer-t3ZKe .framer-1htuiri-container { flex: none; height: auto; position: relative; width: auto; }",
+	".framer-t3ZKe .framer-h01cvc { flex: 1 0 0px; height: 1px; overflow: hidden; position: relative; width: 1px; }",
+	".framer-t3ZKe.framer-v-y1ogye.framer-dftqrj { width: 810px; }",
+	".framer-t3ZKe.framer-v-y1ogye .framer-11plhb6 { order: 0; }",
+	".framer-t3ZKe.framer-v-y1ogye .framer-1ryfb6v { order: 1; }",
+	".framer-t3ZKe.framer-v-5qtz75.framer-dftqrj { width: 390px; }",
+	".framer-t3ZKe.framer-v-5qtz75 .framer-1v4zdte { padding: 120px 16px 19px 16px; }",
+	".framer-t3ZKe.framer-v-5qtz75 .framer-1fcmjse { height: 438px; }",
+	".framer-t3ZKe.framer-v-5qtz75 .framer-10cuylw, .framer-t3ZKe.framer-v-5qtz75 .framer-1qznuy6 { gap: 24px; }",
+	".framer-t3ZKe.framer-v-5qtz75 .framer-utnsmw-container { height: 45%; width: 358px; }",
 	...css4,
 	...css7,
 	...css,
@@ -3601,9 +3601,9 @@ var css8 = [
 	...css2,
 	...css5,
 	...css6,
-	'.framer-DgmL2[data-border="true"]::after, .framer-DgmL2 [data-border="true"]::after { content: ""; border-width: var(--border-top-width, 0) var(--border-right-width, 0) var(--border-bottom-width, 0) var(--border-left-width, 0); border-color: var(--border-color, none); border-style: var(--border-style, none); width: 100%; height: 100%; position: absolute; box-sizing: border-box; left: 0; top: 0; border-radius: inherit; corner-shape: inherit; pointer-events: none; }',
+	'.framer-t3ZKe[data-border="true"]::after, .framer-t3ZKe [data-border="true"]::after { content: ""; border-width: var(--border-top-width, 0) var(--border-right-width, 0) var(--border-bottom-width, 0) var(--border-left-width, 0); border-color: var(--border-color, none); border-style: var(--border-style, none); width: 100%; height: 100%; position: absolute; box-sizing: border-box; left: 0; top: 0; border-radius: inherit; corner-shape: inherit; pointer-events: none; }',
 ];
-var FramerKgzg6ADD5 = withCSS2(Component2, css8, "framer-DgmL2");
+var FramerKgzg6ADD5 = withCSS2(Component2, css8, "framer-t3ZKe");
 var stdin_default3 = FramerKgzg6ADD5;
 FramerKgzg6ADD5.displayName = "ProjectPages";
 FramerKgzg6ADD5.defaultProps = {
