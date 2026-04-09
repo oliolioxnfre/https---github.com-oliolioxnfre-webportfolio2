@@ -4380,6 +4380,36 @@ var Component = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 													</motion.p>
 												</React.Fragment>
 											</RichText>
+																						<RichText
+												__fromCanvasComponent={true}
+												as={"li"}
+												className={"framer-197ci5e"}
+												fonts={["Inter"]}
+												layoutDependency={layoutDependency}
+												layoutId={"zjM1gONoA"}
+												style={{
+													"--extracted-r6o4lv":
+														"var(--token-e2b3e115-6772-4873-ba11-049b11b30d8f, rgb(164, 164, 164))",
+													"--framer-link-text-color": "rgb(0, 153, 255)",
+													"--framer-link-text-decoration": "underline",
+												}}
+												verticalAlignment={"top"}
+												withExternalLayout={true}
+											>
+												<React.Fragment>
+													<motion.p
+														className={"framer-styles-preset-3yhvoo"}
+														data-styles-preset={"D9fLq48kA"}
+														dir={"auto"}
+														style={{
+															"--framer-text-color":
+																"var(--extracted-r6o4lv, var(--token-e2b3e115-6772-4873-ba11-049b11b30d8f, rgb(164, 164, 164)))",
+														}}
+													>
+														{"Openclaw"}
+													</motion.p>
+												</React.Fragment>
+											</RichText>
 											<RichText
 												__fromCanvasComponent={true}
 												as={"li"}

@@ -2925,18 +2925,7 @@ var Component2 = /* @__PURE__ */ React.forwardRef(function (props, ref) {
 										verticalAlignment={"top"}
 										withExternalLayout={true}
 									>
-										<React.Fragment>
-											<motion2.h2
-												className={"framer-styles-preset-1jzdcro"}
-												data-styles-preset={"jtK6bEg6A"}
-												dir={"auto"}
-												style={{
-													"--framer-text-alignment": "left",
-												}}
-											>
-												{"More Projects"}
-											</motion2.h2>
-										</React.Fragment>
+
 									</RichText>
 									<motion2.div
 										className={"framer-131s2aj"}

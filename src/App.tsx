@@ -23,13 +23,13 @@ const PROJECTS_DATA: Record<string, any> = {
     outcome: `<p dir="auto">The result is <strong>DJWYA</strong>, a fully decoupled ecosystem that effectively bridges the gap between music streaming data and live performance discovery. The platform successfully transforms listening habits into actionable intelligence, providing users with a definitive "Synergy Score" for festivals worldwide. By automating the extraction of lineup data from thousands of unstructured sources, I created a self-sustaining data engine that remains accurate as the festival circuit evolves.</p>`,
     standout: `<ul dir="auto"><li data-preset-tag="p"><p><strong>The Sonic DNA Brain:</strong> A custom-engineered mathematical model that quantifies musical preference into a 7-dimensional vector, allowing for precision matching between listeners and event lineups.</p></li><li data-preset-tag="p"><p><strong>Interactive Force-Directed Graph (D3.js):</strong> A massive, navigable "Sonic Universe" visualization. Each genre node and lineage edge was populated using an LLM-assisted script to ensure accurate genealogical relationships between musical styles.</p></li><li data-preset-tag="p"><p><strong>Geospatial Discovery (Leaflet):</strong> A dynamic festival map featuring high-density clustering and geolocation, allowing users to visualize the global music landscape geographically.</p></li><li data-preset-tag="p"><p><strong>Automated Agentic ETL:</strong> A headless scraping pipeline that utilizes OCR and LLM processing to turn flat images of festival posters into structured, relational database entries with zero manual input.</p></li><li data-preset-tag="p"><p><strong>Complex SQL Analytics:</strong> Optimized PostgreSQL queries and JSONB processing used to generate high-fidelity user taste visualizations like the "Genre Donut Chart" and "Sonic DNA StarChart"</p></li></ul>`,
     thumbnails: [
-      "https://framerusercontent.com/images/oqSdgiTHA889fbV5iAZZcF2YjM.gif",
+      "/djwya1.gif",
       "https://framerusercontent.com/images/NdCpHRHsJnn0NS4sRwwgxUjxM.png",
       "https://framerusercontent.com/images/vFLvQG3UqNfBVAVEQlhlCpBjX2k.gif",
       "https://framerusercontent.com/images/Py7CJ9J9JWIYKogqcdM9hr6319w.gif"
     ]
   },
-  
+
   "lab": {
     title: "Cyber Security Homelab",
     slug: "lab",
@@ -98,7 +98,7 @@ const PROJECTS_DATA: Record<string, any> = {
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
-  
+
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
@@ -110,41 +110,40 @@ function Navbar() {
   }, [])
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-[100] h-20 bg-[rgb(20,20,23)]/80 backdrop-blur-xl border-b border-white/10 flex items-center justify-between px-10 shadow-2xl">
-      <Link to="/" className="text-white text-2xl font-black tracking-tighter hover:opacity-70 transition-opacity">
+    <nav className="fixed top-0 left-0 w-full z-[100] h-10 bg-[rgb(20,20,23)]/80 backdrop-blur-xl border-b border-white/10 flex items-center justify-between px-10 shadow-2xl">
+      <Link to="/" className="text-white text-xl font-black tracking-tighter hover:opacity-70 transition-opacity">
         OLIVER<span className="text-white/40">KING</span>
       </Link>
 
       <div className="flex items-center gap-10">
-        <a href="/#home" className="text-white font-medium hover:text-white/60 transition-colors uppercase text-sm tracking-widest">Home</a>
-        
+
         <div className="relative" ref={dropdownRef}>
-          <button 
+          <button
             onClick={() => setIsOpen(!isOpen)}
             className="flex items-center gap-2 text-white font-medium hover:text-white/60 transition-colors uppercase text-sm tracking-widest outline-none"
           >
             Projects
             <svg className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
           </button>
-          
+
           {isOpen && (
-            <div className="absolute top-12 right-0 w-64 bg-[rgb(30,30,33)] border border-white/10 rounded-2xl overflow-hidden shadow-2xl animate-in fade-in slide-in-from-top-2 duration-200">
+            <div className="absolute top-8 right-0 w-64 bg-[rgb(30,30,33)] border border-white/10 rounded-2xl overflow-hidden shadow-2xl animate-in fade-in slide-in-from-top-2 duration-200">
               {Object.values(PROJECTS_DATA).map((p: any) => (
-                <Link 
+                <a
                   key={p.slug}
-                  to={`/projects/${p.slug}`}
+                  href={`/projects/${p.slug}`}
                   onClick={() => setIsOpen(false)}
                   className="block px-6 py-4 text-white hover:bg-white/5 transition-colors border-b border-white/5 last:border-0"
                 >
                   <p className="font-bold text-sm tracking-tight">{p.title}</p>
                   <p className="text-[10px] text-white/40 uppercase tracking-widest mt-1 truncate">{p.subheading}</p>
-                </Link>
+                </a>
               ))}
             </div>
           )}
         </div>
 
-        <a href="mailto:www.oli.m.king@proton.me" className="px-6 py-2 bg-white text-black font-bold text-xs uppercase tracking-widest rounded-full hover:bg-white/90 transition-all">Contact</a>
+        <a href="mailto:www.oli.m.king@proton.me" className="hidden sm:block px-6 py-2 bg-white text-black font-bold text-xs uppercase tracking-widest rounded-full hover:bg-white/90 transition-all">Contact</a>
       </div>
     </nav>
   )
@@ -152,7 +151,7 @@ function Navbar() {
 
 function Home() {
   return (
-    <div className='flex flex-col items-center gap-3 bg-[rgb(20,_20,_23)] pt-20'>
+    <div className='flex flex-col items-center gap-3 bg-[rgb(20,_20,_23)] pt-10'>
       <div id="home" className="w-full">
         <MainFramerComponent.Responsive />
       </div>
@@ -185,29 +184,29 @@ function ProjectDetail() {
   }
 
   return (
-    <div className='flex flex-col items-center bg-[rgb(20,_20,_23)] min-h-screen relative pt-20'>
+    <div className='flex flex-col items-center bg-[rgb(20,_20,_23)] min-h-screen relative pt-10'>
       <div className="relative w-full max-w-[1440px] group">
         {/* Navigation Arrows - Fixed to Hero Image Area (Y=542 based on DOM analysis) */}
         {project.thumbnails.length > 1 && (
           <div className="absolute top-[542px] left-0 w-full flex justify-between px-8 z-50 pointer-events-none">
-            <button 
+            <button
               onClick={prevSlide}
               className="p-3 rounded-full bg-white/15 backdrop-blur-xl border border-white/25 text-white hover:bg-white/30 transition-all opacity-60 hover:opacity-100 pointer-events-auto shadow-2xl"
               aria-label="Previous slide"
             >
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6" /></svg>
             </button>
-            <button 
+            <button
               onClick={nextSlide}
               className="p-3 rounded-full bg-white/15 backdrop-blur-xl border border-white/25 text-white hover:bg-white/30 transition-all opacity-60 hover:opacity-100 pointer-events-auto shadow-2xl"
               aria-label="Next slide"
             >
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
             </button>
           </div>
         )}
 
-        <div onClick={nextSlide} className="cursor-pointer w-full flex flex-col items-center">
+        <div className="w-full flex flex-col items-center">
           <ProjectPagesFramerComponent.Responsive
             rqYSr2Mxd={project.title}
             oYD_u0e5Y={project.subheading}
