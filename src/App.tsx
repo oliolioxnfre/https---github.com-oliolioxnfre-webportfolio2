@@ -110,40 +110,42 @@ function Navbar() {
   }, [])
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-[100] h-10 bg-[rgb(20,20,23)]/80 backdrop-blur-xl border-b border-white/10 flex items-center justify-between px-10 shadow-2xl">
-      <Link to="/" className="text-white text-xl font-black tracking-tighter hover:opacity-70 transition-opacity">
-        OLIVER<span className="text-white/40">KING</span>
-      </Link>
+    <nav className="fixed top-0 left-0 w-full z-[100] h-10 bg-[rgb(20,20,23)]/80 backdrop-blur-xl border-b border-white/10 flex items-center justify-center shadow-2xl">
+      <div className="w-full max-w-[1440px] flex items-center justify-between px-6 sm:px-10">
+        <Link to="/" className="text-white text-xl font-black tracking-tighter hover:opacity-70 transition-opacity">
+          OLIVER<span className="text-white/40">KING</span>
+        </Link>
 
-      <div className="flex items-center gap-10">
+        <div className="flex items-center gap-10">
 
-        <div className="relative" ref={dropdownRef}>
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="flex items-center gap-2 text-white font-medium hover:text-white/60 transition-colors uppercase text-sm tracking-widest outline-none"
-          >
-            Projects
-            <svg className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
-          </button>
+          <div className="relative" ref={dropdownRef}>
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="flex items-center gap-2 text-white font-medium hover:text-white/60 transition-colors uppercase text-sm tracking-widest outline-none"
+            >
+              Projects
+              <svg className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
 
-          {isOpen && (
-            <div className="absolute top-8 right-0 w-64 bg-[rgb(30,30,33)] border border-white/10 rounded-2xl overflow-hidden shadow-2xl animate-in fade-in slide-in-from-top-2 duration-200">
-              {Object.values(PROJECTS_DATA).map((p: any) => (
-                <a
-                  key={p.slug}
-                  href={`/projects/${p.slug}`}
-                  onClick={() => setIsOpen(false)}
-                  className="block px-6 py-4 text-white hover:bg-white/5 transition-colors border-b border-white/5 last:border-0"
-                >
-                  <p className="font-bold text-sm tracking-tight">{p.title}</p>
-                  <p className="text-[10px] text-white/40 uppercase tracking-widest mt-1 truncate">{p.subheading}</p>
-                </a>
-              ))}
-            </div>
-          )}
+            {isOpen && (
+              <div className="absolute top-10 right-0 w-64 bg-[rgb(30,30,33)] border border-white/10 rounded-2xl overflow-hidden shadow-2xl animate-in fade-in slide-in-from-top-2 duration-200">
+                {Object.values(PROJECTS_DATA).map((p: any) => (
+                  <a
+                    key={p.slug}
+                    href={`/projects/${p.slug}`}
+                    onClick={() => setIsOpen(false)}
+                    className="block px-6 py-4 text-white hover:bg-white/5 transition-colors border-b border-white/5 last:border-0"
+                  >
+                    <p className="font-bold text-sm tracking-tight">{p.title}</p>
+                    <p className="text-[10px] text-white/40 uppercase tracking-widest mt-1 truncate">{p.subheading}</p>
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <a href="mailto:www.oli.m.king@proton.me" className="hidden sm:block px-6 py-2 bg-white text-black font-bold text-xs uppercase tracking-widest rounded-full hover:bg-white/90 transition-all">Contact</a>
         </div>
-
-        <a href="mailto:www.oli.m.king@proton.me" className="hidden sm:block px-6 py-2 bg-white text-black font-bold text-xs uppercase tracking-widest rounded-full hover:bg-white/90 transition-all">Contact</a>
       </div>
     </nav>
   )
@@ -151,11 +153,10 @@ function Navbar() {
 
 function Home() {
   return (
-    <div className='flex flex-col items-center gap-3 bg-[rgb(20,_20,_23)] pt-10'>
-      <div id="home" className="w-full">
+    <div className='flex flex-col items-center bg-[rgb(20,_20,_23)] min-h-screen pt-10'>
+      <div id="home" className="w-full max-w-[1440px] px-6 sm:px-10">
         <MainFramerComponent.Responsive />
       </div>
-
     </div>
   )
 }
@@ -214,7 +215,7 @@ function ProjectDetail() {
 
   return (
     <div className='flex flex-col items-center bg-[rgb(20,_20,_23)] min-h-screen relative pt-10'>
-      <div className="relative w-full max-w-[1440px] group">
+      <div className="relative w-full max-w-[1440px] px-6 sm:px-10 group">
         {/* Navigation Arrows - Using a much higher z-index and ensuring they are clickable */}
         {project.thumbnails.length > 1 && (
           <div className="absolute top-[542px] left-0 w-full flex justify-between px-8 z-[9999] pointer-events-none">
