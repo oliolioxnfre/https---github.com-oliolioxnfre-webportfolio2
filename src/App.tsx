@@ -1,5 +1,5 @@
 import './framer/styles.css'
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, startTransition } from 'react'
 import { BrowserRouter, Routes, Route, useParams, Link } from 'react-router-dom'
 
 import MainFramerComponent from './framer/main'
@@ -164,6 +164,31 @@ function ProjectDetail() {
   const { slug } = useParams()
   const project = PROJECTS_DATA[slug || ""]
   const [imgIndex, setImgIndex] = useState(0)
+  const [isPreloading, setIsPreloading] = useState(true)
+
+  // Reset index when project changes
+  useEffect(() => {
+    setImgIndex(0)
+
+    // Smart preloading: Load the first image immediately, then the rest
+    if (project?.thumbnails) {
+      const preloadImages = async () => {
+        // First one is handled by the component, but we ensure it's prioritized
+        const firstImg = new Image()
+        firstImg.src = project.thumbnails[0]
+
+        // Load others in background after a short delay
+        setTimeout(() => {
+          project.thumbnails.slice(1).forEach(src => {
+            const img = new Image()
+            img.src = src
+          })
+          setIsPreloading(false)
+        }, 1000)
+      }
+      preloadImages()
+    }
+  }, [slug, project])
 
   if (!project) {
     return <div className="text-white p-40 flex items-center justify-center min-h-screen">Project not found</div>
@@ -172,36 +197,42 @@ function ProjectDetail() {
   const nextSlide = (e: React.MouseEvent) => {
     e.stopPropagation()
     if (project.thumbnails.length > 1) {
-      setImgIndex((prev) => (prev + 1) % project.thumbnails.length)
+      startTransition(() => {
+        setImgIndex((prev) => (prev + 1) % project.thumbnails.length)
+      })
     }
   }
 
   const prevSlide = (e: React.MouseEvent) => {
     e.stopPropagation()
     if (project.thumbnails.length > 1) {
-      setImgIndex((prev) => (prev - 1 + project.thumbnails.length) % project.thumbnails.length)
+      startTransition(() => {
+        setImgIndex((prev) => (prev - 1 + project.thumbnails.length) % project.thumbnails.length)
+      })
     }
   }
 
   return (
     <div className='flex flex-col items-center bg-[rgb(20,_20,_23)] min-h-screen relative pt-10'>
       <div className="relative w-full max-w-[1440px] group">
-        {/* Navigation Arrows - Fixed to Hero Image Area (Y=542 based on DOM analysis) */}
+        {/* Navigation Arrows - Using a much higher z-index and ensuring they are clickable */}
         {project.thumbnails.length > 1 && (
-          <div className="absolute top-[542px] left-0 w-full flex justify-between px-8 z-50 pointer-events-none">
+          <div className="absolute top-[542px] left-0 w-full flex justify-between px-8 z-[9999] pointer-events-none">
             <button
               onClick={prevSlide}
-              className="p-3 rounded-full bg-white/15 backdrop-blur-xl border border-white/25 text-white hover:bg-white/30 transition-all opacity-60 hover:opacity-100 pointer-events-auto shadow-2xl"
+              className="p-4 rounded-full bg-black/40 backdrop-blur-3xl border border-white/20 text-white hover:bg-white/20 hover:scale-110 active:scale-95 transition-all opacity-80 hover:opacity-100 pointer-events-auto shadow-[0_0_30px_rgba(0,0,0,0.5)] flex items-center justify-center"
               aria-label="Previous slide"
+              style={{ minWidth: '64px', minHeight: '64px' }}
             >
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6" /></svg>
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6" /></svg>
             </button>
             <button
               onClick={nextSlide}
-              className="p-3 rounded-full bg-white/15 backdrop-blur-xl border border-white/25 text-white hover:bg-white/30 transition-all opacity-60 hover:opacity-100 pointer-events-auto shadow-2xl"
+              className="p-4 rounded-full bg-black/40 backdrop-blur-3xl border border-white/20 text-white hover:bg-white/20 hover:scale-110 active:scale-95 transition-all opacity-80 hover:opacity-100 pointer-events-auto shadow-[0_0_30px_rgba(0,0,0,0.5)] flex items-center justify-center"
               aria-label="Next slide"
+              style={{ minWidth: '64px', minHeight: '64px' }}
             >
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
             </button>
           </div>
         )}
@@ -218,6 +249,13 @@ function ProjectDetail() {
             N10BGPLRR={project.standout}
             rcpXaqRkc={{ src: project.thumbnails[imgIndex] }}
           />
+        </div>
+
+        {/* Hidden Preloader to keep all project images in browser cache/memory */}
+        <div style={{ position: 'absolute', width: 0, height: 0, overflow: 'hidden', opacity: 0, pointerEvents: 'none' }}>
+          {project.thumbnails.map((src: string, index: number) => (
+            <img key={index} src={src} alt="preload" />
+          ))}
         </div>
       </div>
     </div>
